@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Grid Template Areas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 5fr 1fr;
+                grid-gap: 20px;
+                grid-template-rows: 150px 150px 150px;
+                grid-template-areas: 
+                'header header header'
+                'aside content content' 
+                'aside footer footer';
+            }
+    
+            .items {
+                text-align: center;
+                border-radius: 5px;
+                font-size: 30px;
+            }
+
+            .content {
+                grid-area: content;
+                background-color: #bada55;
+            }
+
+            .item2 {
+                grid-area: header;
+                background-color: #bada55;
+            }
+
+            .item3 {
+                grid-area: content;
+                background-color: blueviolet;
+            }
+            
+            .item4 {
+                grid-area: aside;
+                background-color: pink;
+            }
+
+            .item5 {
+                grid-area: footer;
+                background-color: goldenrod;
+
+            }
+
+            @media (max-width: 786px) {
+                .container{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 20px;
+                grid-template-rows: 150px 150px 150px 150px;
+                grid-template-areas: 
+                'header'
+                'content'
+                'aside' 
+                'footer';
+             }
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+            <section class="items item2"></section>
+            <section class="items item3"></section>
+            <aside class="items item4"></aside>
+            <footer class="items item5"></footer>
+
+    </div>
+    
+</body>
+</html>
