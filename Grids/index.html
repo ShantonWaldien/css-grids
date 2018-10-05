@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GRIDS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        .grid-container1 {
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color: black;
+            color: white;
+            grid-gap: 15px;
+            padding: 10px;
+        }
+
+        .grid-container1 > div {
+            background-color: red;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+        }
+
+
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            height: 2vh;
+        }
+
+        .item2 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            height: 80vh;
+
+        }
+
+        .grid-container2 {
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color: black;
+            color: white;
+            grid-gap: 15px;
+            padding: 10px;
+        }
+
+        .grid-container2 > div {
+            background-color: red;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+            height: 60vh;
+        }
+
+        .grid-container3 {
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color: black;
+            color: white;
+            grid-gap: 15px;
+            padding: 10px;
+        }
+
+        .grid-container3 > div {
+            background-color: red;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+            height: 60vh;
+        }
+
+        .grid-container4 {
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color: black;
+            color: white;
+            grid-gap: 15px;
+            padding: 10px;
+        }
+        
+        .grid-container4 > div {
+            background-color: red;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+            height: 5vh;
+        }
+
+        .item7 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="grid-container1">
+        <div class="item1">
+
+            Col 1
+            
+        </div>
+        <div class="item2">
+
+                Col 2
+                
+            </div>
+    </div>
+
+    <div class="grid-container2">
+            <div class="item3">
+    
+                Col 3
+                
+            </div>
+            <div class="item4">
+    
+                Col 4
+                    
+            </div>
+    </div>
+    <div class="grid-container3">
+            <div class="item5">
+    
+                Col 5
+                
+            </div>
+            <div class="item6">
+    
+                Col 6
+                    
+            </div>
+    </div>
+    <div class="grid-container4">
+            <div class="item7">
+    
+                Col 7
+                
+            </div>
+    </div>
+    
+</body>
+</html>

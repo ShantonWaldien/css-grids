@@ -1,2 +1,3 @@
 # css-grids
-grid exercises done with nathan banda
+grid exercises done in class
+
